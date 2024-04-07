@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvCurrencyA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency A:" />
+
+    <EditText
+        android:id="@+id/etAmountA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Amount in Currency A" />
+
+    <TextView
+        android:id="@+id/tvConversionSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCurrencyB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etAmountB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Amount in Currency B"
+        android:enabled="false" />
+
+</LinearLayout>
